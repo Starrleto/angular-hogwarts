@@ -34,7 +34,6 @@ export class HarrypotterComponent implements OnInit {
   getSpecificData(id: string) : ICharacter | null | undefined {
 
     if(this.allCharData != null){
-      console.log(this.allCharData.find((e) => e.id == id));
       return this.allCharData.find((e) => e.id == id);
     }
 
