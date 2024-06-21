@@ -43,7 +43,7 @@ export class HarrypotterComponent implements OnInit {
 
   GetCurrentDOB(){
     if(this.currentCharData?.dateOfBirth != null && this.currentCharData?.yearOfBirth != null)
-      return this.currentCharData.dateOfBirth + ", " + this.currentCharData.yearOfBirth;
+      return this.currentCharData.dateOfBirth
     else if(this.currentCharData?.yearOfBirth != null)
       return this.currentCharData.yearOfBirth;
     else
